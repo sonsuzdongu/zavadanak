@@ -4,6 +4,12 @@ A simple python script to crawl pages recursively using headless chrome
 and list some information like Time to first byte, dom load and page load
 
 
+## Prerequisities
+
+    apt-get install chromium-chromedriver
+
+Make sure that you set 'chromeDriverPath' variable
+
 ## Usage
 
 python zavadanak.py http://[YOUR_URL]
@@ -35,5 +41,9 @@ python zavadanak.py http://[YOUR_URL]
           +ssssssoo//ssssyyyhhhhhhhhhhhhhhhyyssoyd/+`
 </pre>
 
+# Troubleshoot
 
+If you get such error make sure that you are not running the app as root
 
+    selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.
+      (unknown error: DevToolsActivePort file doesn't exist)

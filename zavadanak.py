@@ -19,8 +19,9 @@ from urlparse import urlparse
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-        
-chromeDriverPath = "/usr/local/bin/chromedriver"
+
+# TODO: update that path
+chromeDriverPath = "/usr/bin/chromedriver"
 
 options = Options()
 options.headless = True
